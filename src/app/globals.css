@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer components {
+  .glass-card {
+    /* Fondo blanco con alta transparencia y desenfoque */
+    @apply bg-white/70 backdrop-blur-lg border border-white/40 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)];
+  }
+  
+  .glass-sidebar {
+    /* Sidebar ultra limpio */
+    @apply bg-white/40 backdrop-blur-xl border-r border-slate-200/50;
+  }
+  
+  .premium-gradient {
+    @apply bg-gradient-to-br from-blue-600 to-indigo-700;
+  }
+  
+  /* Sombras personalizadas para mayor elegancia */
+  .shadow-hover {
+    @apply hover:shadow-[0_10px_25px_-5px_rgba(59,130,246,0.1)];
+  }
+}
+
+/* Scrollbar elegante */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
