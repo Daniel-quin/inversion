@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "WealthPort - Tablero de Inversiones Elite",
-  description: "Gestión institucional de portafolio y capital.",
+  description: "Gestión institucional de portafolio y capital para inversionistas.",
 };
 
 export default function RootLayout({
